@@ -1,0 +1,24 @@
+:root {
+  --primary: #3a0ca3;
+  --secondary: #7209b7;
+  --tertiary: #f72585;
+  --sky: #4cc9f0;
+  --light: #ffffff;
+  --dark: #0b0b16;
+}
+
+body {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  color: var(--light);
+  background-color: var(--dark);
+}
+
+a {
+  font-weight: 500;
+  color: var(--primary);
+  text-decoration: none;
+}
+a:hover {
+  color: var(--secondary);
+}

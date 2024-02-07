@@ -1,0 +1,61 @@
+button {
+  margin: 1rem auto;
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: #ffffff;
+  cursor: pointer;
+  transition: 200ms ease-in-out;
+  background-color: var(--tertiary);
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 0.5s ease-in-out;
+}
+
+button:hover {
+  background-color: var(--dark);
+  color: var(--light);
+  border: 1px solid var(--tertiary);
+  transition: 50%;
+  transition: 200ms ease-in-out;
+  box-shadow: 0px 0px 30px var(--tertiary);
+  background-position: 0%;
+}
+
+/* button {
+  margin: 1rem auto;
+  border-radius: 8px;
+  border: 1px solid var(--tertiary);
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  color: var(--light);
+  cursor: pointer;
+  background: linear-gradient(to right, var(--dark) 50%, var(--tertiary) 50%);
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 100ms ease-in-out;
+}
+
+button:hover {
+  transition: background-position 100ms ease-in-out;
+  background-position: 0%;
+  box-shadow: 0px 0px 30px var(--tertiary);
+} */
+
+.social-media-btn,
+.theme-toggle-btn {
+  margin: 0 1.1rem 0 0;
+  padding: 0;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+}
+
+.theme-toggle-btn {
+  margin: 0;
+}

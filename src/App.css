@@ -1,0 +1,18 @@
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  margin: 1.5rem auto;
+  padding: 1.5rem;
+  width: 90vw;
+  min-height: 100%;
+}
+
+.text-tertiary {
+  color: var(--tertiary);
+}
