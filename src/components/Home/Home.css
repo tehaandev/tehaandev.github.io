@@ -1,21 +1,3 @@
-.home-layout {
-  display: flex;
-  align-items: center;
-  min-height: 100%;
-}
-
-.home-layout h1 {
-  font-size: 5rem;
-}
-
-.home-layout h3 {
-  font-size: 2rem;
-}
-
-.home-layout p {
-  text-align: justify;
-}
-
 .home-layout-card-left {
   padding: 1.5rem 1rem;
   flex: 60%;

@@ -7,6 +7,13 @@ import Skills from "./components/Skills/Skills";
 import Portfolio from "./components/Portfolio/Portfolio";
 import Contact from "./components/Contact/Contact";
 
+// Lazy Components
+// const Home = React.lazy(() => import('./components/Home/Home'));
+// const About = React.lazy(() => import('./components/About/About'));
+// const Skills = React.lazy(() => import('./components/Skills/Skills'));
+// const Portfolio = React.lazy(() => import('./components/Portfolio/Portfolio'));
+// const Contact = React.lazy(() => import('./components/Contact/Contact'));
+
 const HOME_ROUTE = "/";
 const ABOUT_ROUTE = "/about";
 const SKILLS_ROUTE = "/skills";

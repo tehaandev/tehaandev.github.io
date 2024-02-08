@@ -11,8 +11,38 @@ h4 {
   padding: 1.5rem;
   width: 90vw;
   min-height: 100%;
+  text-align: justify;
+}
+
+.two-card-layout {
+  display: flex;
+  align-items: center;
 }
 
 .text-tertiary {
-  color: var(--tertiary);
+  color: var(--tertiary) !important;
+}
+
+.container h1 {
+  font-size: 5rem;
+}
+
+.container h3 {
+  font-size: 2rem;
+}
+
+.container p {
+  text-align: justify;
+}
+
+.sub-container {
+  padding: 1rem;
+}
+
+.container ul li {
+  margin: 1rem 0;
+}
+
+.text-center {
+  text-align: center !important;
 }
