@@ -11,7 +11,7 @@ const Skills = lazy(() => import("./components/Skills/Skills"));
 const Portfolio = lazy(() => import("./components/Portfolio/Portfolio"));
 const Contact = lazy(() => import("./components/Contact/Contact"));
 
-const HOME_ROUTE = "/";
+const HOME_ROUTE = "/*";
 const ABOUT_ROUTE = "/about";
 const SKILLS_ROUTE = "/skills";
 const PORTFOLIO_ROUTE = "/portfolio";
@@ -23,26 +23,11 @@ function App() {
       <Header />
       <Suspense fallback={<Loading />}>
         <Routes>
-          <Route
-            path={HOME_ROUTE}
-            element={<Home />}
-          />
-          <Route
-            path={ABOUT_ROUTE}
-            element={<About />}
-          />
-          <Route
-            path={SKILLS_ROUTE}
-            element={<Skills />}
-          />
-          <Route
-            path={PORTFOLIO_ROUTE}
-            element={<Portfolio />}
-          />
-          <Route
-            path={CONTACT_ROUTE}
-            element={<Contact />}
-          />
+          <Route path={HOME_ROUTE} element={<Home />} />
+          <Route path={ABOUT_ROUTE} element={<About />} />
+          <Route path={SKILLS_ROUTE} element={<Skills />} />
+          <Route path={PORTFOLIO_ROUTE} element={<Portfolio />} />
+          <Route path={CONTACT_ROUTE} element={<Contact />} />
         </Routes>
       </Suspense>
     </>
