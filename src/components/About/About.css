@@ -23,7 +23,6 @@
 
 .about-layout-card-right {
   flex: 60%;
-  /* padding: 1.5rem 1rem; */
 }
 
 .sub-container {
@@ -35,4 +34,15 @@
 .sub-container h2 {
   text-align: center;
   margin: 0 0 3rem 0;
+}
+
+.place-img {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  max-height: auto;
+}
+
+.place-img[alt="Ananda College"] {
+  width: 150px;
 }

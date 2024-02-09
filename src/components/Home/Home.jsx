@@ -1,7 +1,7 @@
 import "./Home.css";
-import {useEffect} from "react";
-import {Link} from "react-router-dom";
-import {FaGithub, FaLinkedinIn, FaStackOverflow} from "react-icons/fa6";
+import { useEffect } from "react";
+import { Link } from "react-router-dom";
+import { FaGithub, FaLinkedinIn, FaStackOverflow } from "react-icons/fa6";
 import Button from "../Button/Button";
 import img from "../../assets/homepage-picture.png";
 
@@ -23,17 +23,15 @@ function Home() {
           And I'm a <span className="text-tertiary">Frontend Developer.</span>
         </h3>
         <p>
-          I'm a Computer Science undergraduate currently working as an Intern at
-          Calcey. I am known for my adaptability, fast learning abilities, and
-          discipline. Although I'm currently in the early stages of my journey,
-          my passion for technology and my commitment to continuous improvement
-          have propelled me forward. I'm determined to see projects from start
-          to finish using each experience as an opportunity to expand my
-          knowledge and skill set.
+          I'm a Computer Science undergraduate currently working as an Intern at Calcey. I am known
+          for my adaptability, fast learning abilities, and discipline. Although I'm currently in
+          the early stages of my journey, my passion for technology and my commitment to continuous
+          improvement have propelled me forward. I'm determined to see projects from start to finish
+          using each experience as an opportunity to expand my knowledge and skill set.
         </p>
         <Button
           text={RESUME_BTN}
-          onClick={clickHandler}
+          onClick={resumeDownloader}
         />
         <div className="social-media-btns">
           <Link
@@ -73,8 +71,8 @@ function Home() {
   );
 }
 
-function clickHandler() {
-  console.log("click handled");
+function resumeDownloader() {
+  // window.open("/about", "_blank");
 }
 
 export default Home;
