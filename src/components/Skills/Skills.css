@@ -1,0 +1,94 @@
+.skill-icon-container {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  margin: auto;
+}
+
+.skill {
+  width: 100px;
+  height: 100px;
+  margin: 1rem;
+  transition: 200ms ease-in-out;
+}
+
+.skill:hover {
+  transform: scale(1.1);
+  transition: 200ms ease-in-out;
+}
+
+.skill-logo {
+  font-size: 6rem;
+  display: flex;
+  margin: auto;
+}
+
+.skill-name {
+  text-align: center !important;
+}
+
+/* Angular */
+#angular {
+  color: #c3002f;
+}
+
+/* Alpine.js */
+#alpine {
+  color: #8bc0d0;
+}
+
+#csharp {
+  color: #512bd4;
+}
+
+/* CSS3 */
+#css3 {
+  color: #1572b6;
+}
+
+/* HTML5 */
+#html5 {
+  color: #e34f26;
+}
+
+/* Ionic Framework */
+#ionic {
+  color: #3880ff;
+}
+
+/* JavaScript */
+#javascript {
+  color: #f7df1e;
+}
+
+/* Node.js */
+#nodejs {
+  color: #339933;
+}
+
+#php {
+  color: #777bb4;
+}
+
+#react {
+  color: #61dafb;
+}
+
+/* SQLite */
+#sqlite {
+  color: #003b57;
+}
+
+#tailwind {
+  color: #06b6d4;
+}
+
+/* TypeScript */
+#typescript {
+  color: #3178c6;
+}
+
+/* Vite */
+#vite {
+  color: #646cff;
+}

@@ -23,49 +23,29 @@ function Home() {
           And I'm a <span className="text-tertiary">Frontend Developer.</span>
         </h3>
         <p>
-          I'm a Computer Science undergraduate currently working as an Intern at Calcey. I am known
-          for my adaptability, fast learning abilities, and discipline. Although I'm currently in
-          the early stages of my journey, my passion for technology and my commitment to continuous
-          improvement have propelled me forward. I'm determined to see projects from start to finish
-          using each experience as an opportunity to expand my knowledge and skill set.
+          I'm a Computer Science undergraduate currently working as an Intern at
+          Calcey. I am known for my adaptability, fast learning abilities, and
+          discipline. Although I'm currently in the early stages of my journey,
+          my passion for technology and my commitment to continuous improvement
+          have propelled me forward. I'm determined to see projects from start
+          to finish using each experience as an opportunity to expand my
+          knowledge and skill set.
         </p>
-        <Button
-          text={RESUME_BTN}
-          onClick={resumeDownloader}
-        />
+        <Button text={RESUME_BTN} onClick={resumeDownloader} />
         <div className="social-media-btns">
-          <Link
-            to={LINKEDIN_URL}
-            target="_blank"
-          >
-            <Button
-              className="social-media-btn"
-              text={<FaLinkedinIn />}
-            />
+          <Link to={LINKEDIN_URL} target="_blank">
+            <Button className="social-media-btn" text={<FaLinkedinIn />} />
           </Link>
-          <Link
-            to={GITHUB_URL}
-            target="_blank"
-          >
-            <Button
-              className="social-media-btn"
-              text={<FaGithub />}
-            />
+          <Link to={GITHUB_URL} target="_blank">
+            <Button className="social-media-btn" text={<FaGithub />} />
           </Link>
           <Link target="_blank">
-            <Button
-              className="social-media-btn"
-              text={<FaStackOverflow />}
-            />
+            <Button className="social-media-btn" text={<FaStackOverflow />} />
           </Link>
         </div>
       </div>
       <div className="home-layout-card-right">
-        <img
-          className="home-img"
-          src={img}
-          alt="Tehaan Perera"
-        />
+        <img className="home-img" src={img} alt="Tehaan Perera" />
       </div>
     </main>
   );
