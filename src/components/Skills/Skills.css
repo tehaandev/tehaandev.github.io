@@ -40,6 +40,11 @@
   color: #8bc0d0;
 }
 
+#aws + p,
+#aws {
+  color: #ff9900;
+}
+
 #csharp + p,
 #csharp {
   color: #512bd4;

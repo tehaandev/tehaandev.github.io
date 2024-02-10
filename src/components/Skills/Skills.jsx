@@ -3,6 +3,7 @@ import { useEffect } from "react";
 import {
   SiAlpinedotjs,
   SiAngular,
+  SiAmazonaws,
   SiCsharp,
   SiCss3,
   SiHtml5,
@@ -35,6 +36,10 @@ function Skills() {
         <div className="skill">
           <SiAngular className="skill-logo" id="angular" />
           <p className="skill-name">Angular</p>
+        </div>
+        <div className="skill">
+          <SiAmazonaws className="skill-logo" id="aws" />
+          <p className="skill-name">AWS</p>
         </div>
         <div className="skill">
           <SiCsharp className="skill-logo" id="csharp" />
