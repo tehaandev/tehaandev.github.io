@@ -1,0 +1,27 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% - 4rem);
+  padding: 2rem;
+  border-top: 1px solid var(--tertiary);
+}
+
+.footer * {
+  text-align: center;
+  font-weight: 300;
+  font-size: 0.75rem;
+}
+
+.footer-btns {
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer-hr {
+  margin: 1.5rem 0;
+  border: 0.4px solid var(--tertiary);
+  border-radius: 5px;
+}

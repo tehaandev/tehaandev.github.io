@@ -2,6 +2,7 @@ import "./App.css";
 import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
 import Loading from "./components/Loading/Loading";
 
 // Lazy Components
@@ -30,6 +31,7 @@ function App() {
           <Route path={CONTACT_ROUTE} element={<Contact />} />
         </Routes>
       </Suspense>
+      <Footer />
     </>
   );
 }
