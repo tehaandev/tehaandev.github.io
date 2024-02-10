@@ -1,6 +1,12 @@
+import { useEffect } from "react";
 import "./Contact.css";
 
+const TITLE = "TP | Let's get in touch";
+
 function Contact() {
+  useEffect(() => {
+    document.title = TITLE;
+  });
   return (
     <main className="container contact-form-container">
       <h1>
