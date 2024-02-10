@@ -1,4 +1,5 @@
 import "./About.css";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { useEffect } from "react";
 import { Link } from "react-router-dom";
 import Calcey from "../../assets/calcey.svg";
@@ -112,8 +113,10 @@ function About() {
             <p className="time-duration text-center">Jan 2024</p>
             <ul>
               <li>Awarded by Coursera</li>
-              <Link to={AWS_CERT_URL}>
-                <li className="text-tertiary">Link.</li>
+              <Link to={AWS_CERT_URL} target="_blank">
+                <li className="text-tertiary">
+                  View Certificate <FaExternalLinkAlt />.
+                </li>
               </Link>
             </ul>
           </div>
