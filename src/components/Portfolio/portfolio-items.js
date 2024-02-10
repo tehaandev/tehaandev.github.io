@@ -11,7 +11,8 @@ export const PORTFOLIO = {
         imgUrl: portfolioImg,
         description: "Personal portfolio website to showcase the work I've done.",
         technologies: [
-            "Vite + React",
+            "Vite",
+            "React.js"
         ]
     },
     mat: {
@@ -34,7 +35,8 @@ export const PORTFOLIO = {
             "Angular",
             "Node.js",
             "Express.js",
-            "Auth0"
+            "Auth0",
+            "SQLite"
         ]
     },
     turtlesOfLk: {
