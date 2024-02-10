@@ -17,8 +17,8 @@ function Home() {
   return (
     <main className="container home-layout two-card-layout">
       <div className="home-layout-card-left">
-        <h4 className="greet-msg-txt">Hello!</h4>
-        <h1 className="intro-txt">I'm Tehaan Perera</h1>
+        <h4 className="greet-msg-txt">Hello, My name is</h4>
+        <h1 className="intro-txt">Tehaan Perera</h1>
         <h3>
           And I'm a <span className="text-tertiary">Frontend Developer.</span>
         </h3>
@@ -31,17 +31,25 @@ function Home() {
           to finish using each experience as an opportunity to expand my
           knowledge and skill set.
         </p>
-        <Button text={RESUME_BTN} onClick={resumeDownloader} />
-        <div className="social-media-btns">
-          <Link to={LINKEDIN_URL} target="_blank">
-            <Button className="social-media-btn" text={<FaLinkedinIn />} />
-          </Link>
-          <Link to={GITHUB_URL} target="_blank">
-            <Button className="social-media-btn" text={<FaGithub />} />
-          </Link>
-          <Link target="_blank">
-            <Button className="social-media-btn" text={<FaStackOverflow />} />
-          </Link>
+        <div className="home-page-btns">
+          <Button text={RESUME_BTN} onClick={resumeDownloader} />
+          <div className="social-media-btns">
+            <Button
+              className="social-media-btn"
+              text={<FaLinkedinIn />}
+              onClick={linkedinBtnClick}
+            />
+            <Button
+              className="social-media-btn"
+              text={<FaGithub />}
+              onClick={githubBtnClick}
+            />
+            <Button
+              className="social-media-btn"
+              text={<FaStackOverflow />}
+              onClick={stackoverflowBtnClick}
+            />
+          </div>
         </div>
       </div>
       <div className="home-layout-card-right">
@@ -52,7 +60,17 @@ function Home() {
 }
 
 function resumeDownloader() {
-  // window.open("/about", "_blank");
+  window.open(LINKEDIN_URL, "_blank");
 }
 
+function linkedinBtnClick() {
+  window.open(LINKEDIN_URL, "_blank");
+}
+
+function githubBtnClick() {
+  window.open(GITHUB_URL, "_blank");
+}
+function stackoverflowBtnClick() {
+  // window.open(LINKEDIN_URL, "_blank");
+}
 export default Home;

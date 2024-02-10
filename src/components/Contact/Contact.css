@@ -1,0 +1,18 @@
+.contact-form-container {
+  display: block;
+  margin: auto;
+  text-align: center;
+  padding: 1.5rem 1rem;
+}
+
+.contact-form-container h1 {
+  font-size: 4rem;
+  margin: 0 0 3rem 0;
+}
+
+.contact-form {
+  border: none;
+  width: 60%;
+  margin: auto;
+  height: 1000px;
+}
