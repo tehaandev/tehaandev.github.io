@@ -13,7 +13,8 @@ export const PORTFOLIO = {
         technologies: [
             "Vite",
             "React.js"
-        ]
+        ],
+        url: "https://tehaandev.github.io"
     },
     mat: {
         id: 3,
@@ -24,7 +25,8 @@ export const PORTFOLIO = {
             "React.js",
             "Amazon Amplify",
             "Amazon SNS"
-        ]
+        ],
+        url: "https://mat.lk"
     },
     ims: {
         id: 2,
@@ -33,11 +35,13 @@ export const PORTFOLIO = {
         description: "A basic inventory manangement system with CRUD operations and authentication.",
         technologies: [
             "Angular",
+            "Ionic",
             "Node.js",
             "Express.js",
             "Auth0",
             "SQLite"
-        ]
+        ],
+        url: "https://github.com/tehaandev/inventory-management-system"
     },
     turtlesOfLk: {
         id: 1,
@@ -47,7 +51,8 @@ export const PORTFOLIO = {
         technologies: [
             "Alpine.js",
             "Tailwind CSS",
-        ]
+        ],
+        url: "https://github.com/tehaandev/turtles-lk/"
     },
     papermunch: {
         id: 0,
@@ -58,6 +63,8 @@ export const PORTFOLIO = {
             "WordPress",
             "AdSense",
             "Hostinger"
-        ]
+        ],
+        url: ""
     }
+
 };
