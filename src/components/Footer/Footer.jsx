@@ -48,7 +48,7 @@ function Footer() {
             <p>
               {COPYRIGHT}{" "}
               <Link className="text-tertiary" to={GITHUB_URL}>
-                TehaanDev.
+                Tehaan Perera.
               </Link>
             </p>
             <p>All rights reserved.</p>
