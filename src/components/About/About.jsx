@@ -59,7 +59,7 @@ function About() {
           </div>
           <div className="about-layout-card-right">
             <h3 className="text-center">Calcey</h3>
-            <p className="time-duration text-center">Jan 2009 - Dec 2022</p>
+            <p className="time-duration text-center">Nov 2023 - Feb 2024</p>
             <ul>
               <li>
                 Worked in a team responsible for developing and maintaining
