@@ -1,0 +1,40 @@
+.tabs-container {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .tabs-container {
+    background-color: var(--dark);
+    padding: 0.5rem 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: calc(100% - 1rem);
+    left: 0;
+    bottom: 0;
+    border-top: 1px var(--tertiary) solid;
+    z-index: 999;
+  }
+
+  .tab {
+    width: 25%;
+    margin: 0;
+    padding: 0.5rem;
+    color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 200ms ease-in-out;
+  }
+
+  .tab:hover,
+  .tabs-container > .active {
+    color: var(--tertiary);
+    transition: 200ms ease-in-out;
+  }
+
+  .tab > * {
+    font-size: 1.5rem;
+  }
+}

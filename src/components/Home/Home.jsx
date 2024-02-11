@@ -9,7 +9,8 @@ import img from "../../assets/homepage-picture.png";
 import resume from "../../assets/docs/resume-tehaan-perera.pdf";
 
 const HOME_TITLE = "TP | Home";
-const RESUME_BTN = `Download R\xE9sum\xE9`;
+// const RESUME_BTN = `Download R\xE9sum\xE9`;
+const RESUME_BTN = `Download CV`;
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/tehaan-perera/";
 const GITHUB_URL = "https://github.com/tehaandev";
@@ -22,9 +23,9 @@ function Home() {
   return (
     <main className="container home-layout two-card-layout">
       <div className="home-layout-card-left">
-        <h4 className="greet-msg-txt">Hello, My name is</h4>
+        <h4 className="intro-txt greet-msg-txt">Hello, My name is</h4>
         <h1 className="intro-txt">Tehaan Perera</h1>
-        <h3>
+        <h3 className="intro-txt">
           And I'm a <span className="text-tertiary">Frontend Developer.</span>
         </h3>
         <p>
@@ -37,7 +38,11 @@ function Home() {
           knowledge and skill set.
         </p>
         <div className="home-page-btns">
-          <Button text={RESUME_BTN} onClick={resumeDownloader} />
+          <Button
+            className="resume-btn"
+            text={RESUME_BTN}
+            onClick={resumeDownloader}
+          />
           <div className="social-media-btns">
             <Button
               className="social-media-btn"

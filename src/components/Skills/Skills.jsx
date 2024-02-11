@@ -29,7 +29,7 @@ function Skills() {
   return (
     <main className="container skills-content">
       <div className="sub-container">
-        <h2 className="page-header">Languages.</h2>
+        <h2 className="skills-header">Languages.</h2>
         <div className="skill-icon-container">
           <div className="skill">
             <SiCsharp className="skill-logo" id="csharp" />
@@ -58,7 +58,7 @@ function Skills() {
         </div>
       </div>
       <div className="sub-container">
-        <h2 className="page-header">
+        <h2 className="skills-header">
           Frameworks and <span className="text-tertiary">Tools.</span>
         </h2>
         <div className="skill-icon-container">

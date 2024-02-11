@@ -65,6 +65,10 @@ button:hover {
   margin: 0;
 }
 
+.resume-btn {
+  width: 180px;
+}
+
 .social-media-btns {
   width: 100%;
   display: flex;
@@ -74,4 +78,10 @@ button:hover {
 
 .social-media-btn {
   margin: 0;
+}
+
+@media only screen and (max-width: 1200px) {
+  .social-media-btns {
+    display: none;
+  }
 }

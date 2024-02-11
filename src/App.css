@@ -7,9 +7,9 @@ h4 {
 }
 
 .container {
+  width: 80%;
   margin: 1.5rem auto;
   padding: 1.5rem;
-  width: 90vw;
   min-height: 100%;
   text-align: justify;
 }
@@ -22,10 +22,6 @@ h4 {
 
 .text-tertiary {
   color: var(--tertiary) !important;
-}
-
-.container h1 {
-  font-size: 5rem;
 }
 
 .page-header {
@@ -51,4 +47,28 @@ h4 {
 
 .text-center {
   text-align: center !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .container {
+    padding: 1.5rem 0;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sub-container {
+    margin-bottom: 2rem;
+    padding: 0rem;
+  }
+
+  h1 {
+    font-size: 3rem !important;
+  }
+  .page-header {
+    font-size: 2.3rem !important;
+  }
+  .two-card-layout {
+    margin: 1rem 1rem 2rem;
+    display: block;
+  }
 }

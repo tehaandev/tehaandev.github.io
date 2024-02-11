@@ -31,7 +31,7 @@ header {
 }
 
 .main-nav ul li a {
-  transition: 20ms ease-in-out;
+  transition: 200ms ease-in-out;
   color: var(--light);
 }
 
@@ -40,4 +40,27 @@ header {
   color: var(--tertiary);
   text-shadow: 0px 5px 15px var(--tertiary);
   transition: 200ms ease-in-out;
+}
+
+@media only screen and (max-width: 1200px) {
+  header {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .main-nav ul,
+  .main-nav ul li {
+    margin: auto 0;
+  }
+
+  .main-nav ul li.nav-link {
+    display: none;
+  }
 }

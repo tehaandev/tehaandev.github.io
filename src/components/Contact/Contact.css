@@ -19,5 +19,17 @@
   border: none;
   width: 100%;
   margin: auto;
-  height: 1000px;
+  height: 1050px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .contact-form-container .sub-container {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contact-form-container .sub-container {
+    width: 100%;
+  }
 }

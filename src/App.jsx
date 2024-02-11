@@ -3,6 +3,7 @@ import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
+import Tabs from "./components/Tabs/Tabs";
 import Loading from "./components/Loading/Loading";
 
 // Lazy Components
@@ -32,6 +33,7 @@ function App() {
         </Routes>
       </Suspense>
       <Footer />
+      <Tabs />
     </>
   );
 }

@@ -1,7 +1,7 @@
 import "./Header.css";
-import {NavLink} from "react-router-dom";
-import {FaMoon, FaSun} from "react-icons/fa6";
-import {createContext, useState} from "react";
+import { NavLink } from "react-router-dom";
+import { FaMoon, FaSun } from "react-icons/fa6";
+import { createContext, useState } from "react";
 import Button from "../Button/Button";
 
 export const ThemeContext = createContext(null);
@@ -32,50 +32,50 @@ function Header() {
       <h1 className="header-title">Portfolio.</h1>
       <nav className="main-nav">
         <ul>
-          <li>
+          <li className="nav-link">
             <NavLink
               to="/"
-              className={({isActive, isPending}) =>
+              className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "active" : ""
               }
             >
               Home
             </NavLink>
           </li>
-          <li>
+          <li className="nav-link">
             <NavLink
               to="/about"
-              className={({isActive, isPending}) =>
+              className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "active" : ""
               }
             >
               About
             </NavLink>
           </li>
-          <li>
+          <li className="nav-link">
             <NavLink
               to="/skills"
-              className={({isActive, isPending}) =>
+              className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "active" : ""
               }
             >
               Skills
             </NavLink>
           </li>
-          <li>
+          <li className="nav-link">
             <NavLink
               to="/portfolio"
-              className={({isActive, isPending}) =>
+              className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "active" : ""
               }
             >
               Portfolio
             </NavLink>
           </li>
-          <li>
+          <li className="nav-link">
             <NavLink
               to="/contact"
-              className={({isActive, isPending}) =>
+              className={({ isActive, isPending }) =>
                 isPending ? "pending" : isActive ? "active" : ""
               }
             >

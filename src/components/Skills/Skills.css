@@ -3,6 +3,11 @@
   width: 70%;
 }
 
+.skills-header {
+  text-align: center;
+  font-size: 2.5rem;
+}
+
 .skill-icon-container {
   display: flex;
   align-items: center;
@@ -108,4 +113,23 @@
 #vite + p,
 #vite {
   color: #646cff;
+}
+
+@media only screen and (max-width: 1200px) {
+  .skills-content {
+    width: 100%;
+  }
+  .skill-icon-container {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .skill {
+    width: 80px;
+    height: 80px;
+    margin: 0.5rem;
+  }
+  .skill-logo {
+    font-size: 3rem;
+  }
 }
