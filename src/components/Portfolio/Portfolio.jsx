@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-import Button from "../Button/Button";
 import { PORTFOLIO } from "./portfolio-items";
 import "./Portfolio.css";
 
@@ -17,11 +16,7 @@ function Portfolio() {
           {Object.keys(PORTFOLIO).map((key) => {
             const technologies = PORTFOLIO[key].technologies;
             return (
-              <div
-                onClick={cardClickHandler(key)}
-                className="portfolio-card"
-                key={PORTFOLIO[key].id}
-              >
+              <div className="portfolio-card" key={PORTFOLIO[key].id}>
                 <div className="portfolio-img">
                   <img src={PORTFOLIO[key].imgUrl} alt="" />
                 </div>
@@ -42,22 +37,6 @@ function Portfolio() {
       </div>
     </main>
   );
-}
-
-function cardClickHandler(name) {
-  console.log(name);
-  // switch (name) {
-  //   case "papermunch":
-  //     window.open(PORTFOLIO[name].url, "_blank");
-  //   case "turtlesOfLk":
-  //     window.open(PORTFOLIO[name].url, "_blank");
-  //   case "ims":
-  //     window.open(PORTFOLIO[name].url, "_blank");
-  //   case "mat":
-  //     window.open(PORTFOLIO[name].url, "_blank");
-  //   case "portfolio":
-  //     window.open(PORTFOLIO[name].url, "_blank");
-  // }
 }
 
 export default Portfolio;

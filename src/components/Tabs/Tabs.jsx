@@ -6,18 +6,12 @@ import {
   FaCode,
   FaPaperPlane,
 } from "react-icons/fa6";
-
 import "./Tabs.css";
 
 function Tabs() {
   return (
     <div className="tabs-container">
-      <NavLink
-        to="/"
-        className={({ isActive, isPending }) =>
-          isPending ? "tab pending" : isActive ? "tab active" : "tab"
-        }
-      >
+      <NavLink to="/" className="tab">
         <FaHouse />
       </NavLink>
       <NavLink to="about" className="tab">

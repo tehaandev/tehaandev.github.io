@@ -4,7 +4,6 @@ import portfolioImg from "../../assets/portfolio/portfolio.png"
 import matImg from "../../assets/portfolio/mat.png"
 import imgImg from "../../assets/portfolio/ims.png"
 
-
 export const PORTFOLIO = {
     portfolio: {
         id: 4,

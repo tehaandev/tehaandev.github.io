@@ -7,11 +7,11 @@ import Tabs from "./components/Tabs/Tabs";
 import Loading from "./components/Loading/Loading";
 
 // Lazy Components
-const Home = lazy(() => import("./components/Home/Home"));
-const About = lazy(() => import("./components/About/About"));
-const Skills = lazy(() => import("./components/Skills/Skills"));
-const Portfolio = lazy(() => import("./components/Portfolio/Portfolio"));
-const Contact = lazy(() => import("./components/Contact/Contact"));
+const Home = lazy(() => import("./components/Home/Home.jsx"));
+const About = lazy(() => import("./components/About/About.jsx"));
+const Skills = lazy(() => import("./components/Skills/Skills.jsx"));
+const Portfolio = lazy(() => import("./components/Portfolio/Portfolio.jsx"));
+const Contact = lazy(() => import("./components/Contact/Contact.jsx"));
 
 const HOME_ROUTE = "/*";
 const ABOUT_ROUTE = "/about";

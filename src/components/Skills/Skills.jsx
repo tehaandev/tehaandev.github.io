@@ -1,5 +1,4 @@
 import { useEffect } from "react";
-
 import {
   SiAlpinedotjs,
   SiAngular,
@@ -17,7 +16,6 @@ import {
   SiTypescript,
   SiVite,
 } from "react-icons/si";
-
 import "./Skills.css";
 
 const SKILLS_TITLE = "TP | What can I do?";

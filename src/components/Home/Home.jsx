@@ -1,15 +1,12 @@
 import "./Home.css";
 import { useEffect } from "react";
-import { Link } from "react-router-dom";
 import { FaGithub, FaLinkedinIn, FaStackOverflow } from "react-icons/fa6";
-import { FaExternalLinkAlt } from "react-icons/fa";
 
 import Button from "../Button/Button";
 import img from "../../assets/homepage-picture.png";
 import resume from "../../assets/docs/resume-tehaan-perera.pdf";
 
 const HOME_TITLE = "TP | Home";
-// const RESUME_BTN = `Download R\xE9sum\xE9`;
 const RESUME_BTN = `Download CV`;
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/tehaan-perera/";

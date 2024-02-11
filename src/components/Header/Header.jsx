@@ -1,10 +1,8 @@
 import "./Header.css";
 import { NavLink } from "react-router-dom";
 import { FaMoon, FaSun } from "react-icons/fa6";
-import { createContext, useState } from "react";
+import { useState } from "react";
 import Button from "../Button/Button";
-
-export const ThemeContext = createContext(null);
 
 function Header() {
   // Default theme
