@@ -2,6 +2,7 @@ import papermunchImg from "../../assets/portfolio/papermunch.png"
 import turtlesOfLk from "../../assets/portfolio/turtlesOfLk.png"
 import portfolioImg from "../../assets/portfolio/portfolio.png"
 import matImg from "../../assets/portfolio/mat.png"
+import imgImg from "../../assets/portfolio/ims.png"
 
 
 export const PORTFOLIO = {
@@ -31,7 +32,7 @@ export const PORTFOLIO = {
     ims: {
         id: 2,
         name: "Inventory Management System",
-        imgUrl: portfolioImg,
+        imgUrl: imgImg,
         description: "A basic inventory manangement system with CRUD operations and authentication.",
         technologies: [
             "Angular",
