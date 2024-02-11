@@ -5,6 +5,11 @@
   padding: 1.5rem 1rem;
 }
 
+.contact-form-container .sub-container {
+  margin: auto;
+  width: 60vw;
+}
+
 .contact-form-container h1 {
   font-size: 4rem;
   margin: 0 0 3rem 0;
@@ -12,7 +17,7 @@
 
 .contact-form {
   border: none;
-  width: 60%;
+  width: 100%;
   margin: auto;
   height: 1000px;
 }

@@ -28,6 +28,11 @@ h4 {
   font-size: 5rem;
 }
 
+.page-header {
+  font-size: 4rem !important;
+  text-align: center;
+}
+
 .container h3 {
   font-size: 2rem;
 }

@@ -18,7 +18,7 @@ function About() {
   return (
     <main className="container about-content">
       <div className="sub-container">
-        <h1>
+        <h1 className="page-header">
           About <span className="text-tertiary">Me.</span>
         </h1>
         <p>

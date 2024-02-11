@@ -9,17 +9,19 @@ function Contact() {
   });
   return (
     <main className="container contact-form-container">
-      <h1>
-        Let's <span className="text-tertiary">talk!</span>
-      </h1>
-      <iframe
-        className="contact-form"
-        src="https://docs.google.com/forms/d/e/1FAIpQLSfnE8hBuPZ5tXlStQNUn0gUJI2VFSsf4f3NBEZO_gURsicDaA/viewform?embedded=true"
-        referrerPolicy="no-referrer"
-        sandbox="allow-forms allow-modals allow-scripts allow-same-origin"
-      >
-        Loading…
-      </iframe>
+      <div className="sub-container">
+        <h1>
+          Let's <span className="text-tertiary">talk!</span>
+        </h1>
+        <iframe
+          className="contact-form"
+          src="https://docs.google.com/forms/d/e/1FAIpQLSfnE8hBuPZ5tXlStQNUn0gUJI2VFSsf4f3NBEZO_gURsicDaA/viewform?embedded=true"
+          referrerPolicy="no-referrer"
+          sandbox="allow-forms allow-modals allow-scripts allow-same-origin"
+        >
+          Loading…
+        </iframe>
+      </div>
     </main>
   );
 }
