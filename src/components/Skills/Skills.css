@@ -31,12 +31,11 @@
 
 .skill-logo {
   font-size: 6rem;
-  display: flex;
   margin: auto;
 }
 
 .skill-name {
-  text-align: center !important;
+  text-align: center;
   font-weight: 700;
 }
 
@@ -120,16 +119,22 @@
     width: 100%;
   }
   .skill-icon-container {
+    margin-top: 1rem;
     width: 100%;
   }
 }
 @media only screen and (max-width: 768px) {
+  .skills-content .sub-container {
+    width: 100%;
+  }
   .skill {
+    text-align: center;
     width: 80px;
     height: 80px;
-    margin: 0.5rem;
+    margin: 1rem 0.5rem;
   }
   .skill-logo {
+    margin: auto;
     font-size: 3rem;
   }
 }

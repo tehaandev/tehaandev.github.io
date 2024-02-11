@@ -33,7 +33,7 @@ h4 {
   font-size: 2rem;
 }
 
-.container p {
+.container > p {
   text-align: justify;
 }
 
