@@ -1,3 +1,8 @@
+.about-content {
+  margin: auto;
+  width: 65%;
+}
+
 .about-content h2 {
   font-size: 2.5rem;
 }
@@ -11,6 +16,7 @@
   color: var(--light);
   font-size: 0.75rem;
   font-weight: 400;
+  margin: 0.3rem 0;
 }
 
 .about-layout-card-right {
@@ -35,6 +41,10 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .about-content {
+    margin: auto;
+    width: 80%;
+  }
   .place-img {
     margin-bottom: 1rem;
   }

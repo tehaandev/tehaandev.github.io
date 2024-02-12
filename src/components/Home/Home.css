@@ -11,6 +11,10 @@ h1.intro-txt {
   font-size: 4rem;
 }
 
+h3.intro-txt {
+  font-size: 1.5rem;
+}
+
 .home-layout-card-right {
   flex: 40%;
   padding: 0;

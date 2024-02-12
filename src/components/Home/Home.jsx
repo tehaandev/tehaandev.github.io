@@ -24,16 +24,15 @@ function Home() {
         <h4 className="intro-txt greet-msg-txt">Hello, My name is</h4>
         <h1 className="intro-txt">Tehaan Perera</h1>
         <h3 className="intro-txt">
-          And I'm a <span className="text-tertiary">Frontend Developer.</span>
+          And I'm a <span className="text-tertiary">Developer.</span>
         </h3>
         <p>
-          I'm a Computer Science undergraduate currently working as an Intern at
-          Calcey. I am known for my adaptability, fast learning abilities, and
-          discipline. Although I'm currently in the early stages of my journey,
-          my passion for technology and my commitment to continuous improvement
-          have propelled me forward. I'm determined to see projects from start
-          to finish using each experience as an opportunity to expand my
-          knowledge and skill set.
+          I’m a developer and UX/UI enthusiast based in Sri Lanka. Currently I’m
+          a second-year undergraduate majoring in Computer Science.
+        </p>
+        <p>
+          I’m passionate about developing lightweight, superfast web apps with a
+          pixel-perfect UI and an intuitive UX.
         </p>
         <div className="home-page-btns">
           <Button

@@ -17,38 +17,39 @@ function About() {
   });
   return (
     <main className="container about-content">
-      <div className="sub-container">
+      <div className="sub-container intro-container">
         <h1 className="page-header">
           About <span className="text-tertiary">Me.</span>
         </h1>
         <p>
-          I'm a Computer Science undergraduate currently working as an Intern at
-          Calcey. I am known for my adaptability, fast learning abilities, and
-          discipline. Although I'm currently in the early stages of my journey,
-          my passion for technology and my commitment to continuous improvement
-          have propelled me forward. I'm determined to see projects from start
-          to finish using each experience as an opportunity to expand my
-          knowledge and skill set.
-        </p>
-        <p>
-          I have experience in developing frontends for web apps using{" "}
-          <span className="text-tertiary">React, Vite, Angular, Ionic</span>{" "}
-          etc. I am also skilled in a variety of other programming languages and
-          technologies, including{" "}
-          <span className="text-tertiary">
-            C#, Java, Node.js, PHP, Python, SQL
-          </span>
-          , and more. I am a quick learner and I am always eager to take on new
-          challenges.
+          I have experience in developing web apps using{" "}
+          <span className="strong">React.js, Vite, Angular, Ionic</span> as well
+          as UI frameworks such as{" "}
+          <span className="strong"> Tailwind CSS.</span> I am also skilled in a
+          variety of other programming languages and technologies, including{" "}
+          <span className="strong">
+            C#, Java, Node.js, PHP, Python, and SQL.
+          </span>{" "}
+          I am a quick learner and I am always eager to take on new challenges.
         </p>
         <p>
           In addition to my technical skills, I am also a team player and I have
           excellent communication and interpersonal skills. I am confident that
-          I would be a valuable asset to any team.
+          I would be a valuable asset to any team. Furthermore I have the
+          ability to adapt to new environments dcedms and learn new
+          techonologies quickly and I'm determined to see projects from start to
+          finish using each experience as an opportunity to expand my knowledge
+          and skill set.
+        </p>
+        <p>
+          As of now, I’ve worked on a projects varying from portfolio websites
+          to business websites.
         </p>
       </div>
       <div className="sub-container">
-        <h2>Work Experience.</h2>
+        <h2>
+          Work Experience<span className="text-tertiary">.</span>
+        </h2>
         <div className="two-card-layout">
           <div className="about-layout-card-left">
             <img
@@ -58,7 +59,7 @@ function About() {
             />
           </div>
           <div className="about-layout-card-right">
-            <h3 className="text-center">Calcey</h3>
+            <h3 className="text-center">Calcey Technologies</h3>
             <p className="time-duration text-center">Nov 2023 - Feb 2024</p>
             <ul>
               <li>
@@ -75,7 +76,9 @@ function About() {
         </div>
       </div>
       <div className="sub-container">
-        <h2>Education.</h2>
+        <h2>
+          Education<span className="text-tertiary">.</span>
+        </h2>
         <div className="two-card-layout">
           <div className="about-layout-card-left">
             <img className="place-img" src={Uni} alt="APIIT" />
