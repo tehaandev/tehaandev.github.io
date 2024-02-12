@@ -8,7 +8,7 @@ const CREDENTIALS = {
 
 const snsClient = new SNSClient({ region: REGION, credentials: CREDENTIALS });
 
-export default async function publishSNS(message, subject) {
+export default async function publishSNS(subject, message) {
   try {
     const TOPIC_ARN = import.meta.env.VITE_AWS_SNS_TOPIC_ARN;
     const params = {
