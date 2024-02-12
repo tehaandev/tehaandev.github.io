@@ -1,10 +1,10 @@
-import "./App.css";
 import { lazy, Suspense } from "react";
 import { Routes, Route } from "react-router-dom";
-import Header from "./components/Header/Header";
+import "./App.css";
 import Footer from "./components/Footer/Footer";
-import Tabs from "./components/Tabs/Tabs";
+import Header from "./components/Header/Header";
 import Loading from "./components/Loading/Loading";
+import Tabs from "./components/Tabs/Tabs";
 
 // Lazy Components
 const Home = lazy(() => import("./components/Home/Home.jsx"));

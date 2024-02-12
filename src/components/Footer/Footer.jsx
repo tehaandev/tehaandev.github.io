@@ -1,16 +1,18 @@
-import { Link, useNavigate } from "react-router-dom";
 import {
   FaGithub,
   FaLinkedinIn,
   FaStackOverflow,
   FaPaperPlane,
 } from "react-icons/fa6";
+import { Link, useNavigate } from "react-router-dom";
 import Button from "../Button/Button";
 import "./Footer.css";
 
 const YEAR = new Date().getFullYear();
 const COPYRIGHT = `\xA9${YEAR}`;
 const GITHUB_URL = "https://github.com/tehaandev";
+const STACK_OVERFLOW_URL =
+  "https://stackoverflow.com/users/23388746/tehaan-perera";
 
 function Footer() {
   const NAVIGATE = useNavigate();
@@ -59,10 +61,6 @@ function Footer() {
   );
 }
 
-function resumeDownloader() {
-  window.open(LINKEDIN_URL, "_blank");
-}
-
 function linkedinBtnClick() {
   window.open(LINKEDIN_URL, "_blank");
 }
@@ -71,7 +69,7 @@ function githubBtnClick() {
   window.open(GITHUB_URL, "_blank");
 }
 function stackoverflowBtnClick() {
-  // window.open(LINKEDIN_URL, "_blank");
+  window.open(STACK_OVERFLOW_URL, "_blank");
 }
 
 export default Footer;

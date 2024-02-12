@@ -1,4 +1,3 @@
-import { NavLink } from "react-router-dom";
 import {
   FaHouse,
   FaCircleQuestion,
@@ -6,6 +5,7 @@ import {
   FaCode,
   FaPaperPlane,
 } from "react-icons/fa6";
+import { NavLink } from "react-router-dom";
 import "./Tabs.css";
 
 function Tabs() {

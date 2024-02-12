@@ -1,10 +1,9 @@
-import "./Home.css";
 import { useEffect } from "react";
 import { FaGithub, FaLinkedinIn, FaStackOverflow } from "react-icons/fa6";
-
-import Button from "../Button/Button";
-import img from "../../assets/homepage-picture.png";
 import resume from "../../assets/docs/resume-tehaan-perera.pdf";
+import img from "../../assets/homepage-picture.png";
+import Button from "../Button/Button";
+import "./Home.css";
 
 const HOME_TITLE = "TP | Home";
 const RESUME_BTN = `Download CV`;
@@ -12,6 +11,8 @@ const RESUME_BTN = `Download CV`;
 const LINKEDIN_URL = "https://www.linkedin.com/in/tehaan-perera/";
 const GITHUB_URL = "https://github.com/tehaandev";
 const RESUME_URL = resume;
+const STACK_OVERFLOW_URL =
+  "https://stackoverflow.com/users/23388746/tehaan-perera";
 
 function Home() {
   useEffect(() => {
@@ -78,6 +79,6 @@ function githubBtnClick() {
   window.open(GITHUB_URL, "_blank");
 }
 function stackoverflowBtnClick() {
-  // window.open(LINKEDIN_URL, "_blank");
+  window.open(STACK_OVERFLOW_URL, "_blank");
 }
 export default Home;

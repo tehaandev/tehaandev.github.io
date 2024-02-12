@@ -1,11 +1,11 @@
-import "./About.css";
-import { FaExternalLinkAlt } from "react-icons/fa";
 import { useEffect } from "react";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
-import Calcey from "../../assets/calcey.svg";
-import Ananda from "../../assets/school-crest.png";
 import Uni from "../../assets/apiit.png";
+import Calcey from "../../assets/calcey.svg";
 import AWS from "../../assets/certs/coursera_aws.jpeg";
+import Ananda from "../../assets/school-crest.png";
+import "./About.css";
 
 const ABOUT_TITLE = "TP | Who am I?";
 const AWS_CERT_URL =

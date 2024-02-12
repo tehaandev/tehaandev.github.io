@@ -1,6 +1,6 @@
-import "./Loading.css";
 import { FaSpinner } from "react-icons/fa6";
 import { PiSpinnerLight } from "react-icons/pi";
+import "./Loading.css";
 
 function Loading() {
   return (

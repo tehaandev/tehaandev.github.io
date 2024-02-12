@@ -1,1 +1,10 @@
-
+{
+  "plugins": ["@trivago/prettier-plugin-sort-imports"],
+  "importOrder": ["^components/(.*)$", "^[./]"],
+  "importOrderSeperation": true,
+  "importOrderSortSpecifier": true,
+  "importOrderGroups": {
+    "external": ["react", "react-dom", "lodash"],
+    "internal": ["components", "hooks", "utils"]
+  }
+}

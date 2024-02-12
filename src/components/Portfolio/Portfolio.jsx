@@ -1,6 +1,6 @@
 import { useEffect } from "react";
-import { PORTFOLIO } from "./portfolio-items";
 import "./Portfolio.css";
+import { PORTFOLIO } from "./portfolio-items";
 
 const TITLE = "TP | Work I've done";
 

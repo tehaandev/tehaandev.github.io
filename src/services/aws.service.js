@@ -1,4 +1,4 @@
-import { SNS, SNSClient, PublishCommand } from "@aws-sdk/client-sns";
+import { SNSClient, PublishCommand } from "@aws-sdk/client-sns";
 
 const REGION = import.meta.env.VITE_AWS_SNS_REGION;
 const CREDENTIALS = {
