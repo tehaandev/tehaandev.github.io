@@ -1,4 +1,6 @@
 import { useEffect } from "react";
+import Button from "../Button/Button.jsx";
+import publishSNS from "../../services/aws.service.js";
 import "./Contact.css";
 
 const TITLE = "TP | Let's get in touch";
@@ -13,16 +15,22 @@ function Contact() {
         <h1>
           Let's <span className="text-tertiary">talk!</span>
         </h1>
-        <iframe
+        {/* <iframe
           className="contact-form"
           src="https://docs.google.com/forms/d/e/1FAIpQLSfnE8hBuPZ5tXlStQNUn0gUJI2VFSsf4f3NBEZO_gURsicDaA/viewform?embedded=true"
           referrerPolicy="no-referrer"
           sandbox="allow-forms allow-modals allow-scripts allow-same-origin"
         >
           Loading…
-        </iframe>
+        </iframe> */}
+        <Button text="test" onClick={clickHandler} />
       </div>
     </main>
   );
 }
 export default Contact;
+
+async function clickHandler() {
+  // console.log(import.meta.env);
+  await publishSNS("test", "test");
+}
