@@ -3,7 +3,7 @@ import { SNS, SNSClient, PublishCommand } from "@aws-sdk/client-sns";
 const REGION = import.meta.env.VITE_AWS_SNS_REGION;
 const CREDENTIALS = {
   accessKeyId: import.meta.env.VITE_AWS_ACCESS_KEY,
-  secretAccessKey: "vE5qtZBUMBNdeBQSEXUHElys2qivkfBFA0Dg5ToK",
+  secretAccessKey: import.meta.env.VITE_AWS_SECRET_ACCESS_KEY,
 };
 
 const snsClient = new SNSClient({ region: REGION, credentials: CREDENTIALS });
