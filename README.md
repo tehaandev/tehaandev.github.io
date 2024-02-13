@@ -1,4 +1,4 @@
-# Portfolio App (v1.0.0)
+# Portfolio App (v1.1.2)
 
 ## Purpose
 
