@@ -36,10 +36,10 @@ function About() {
           In addition to my technical skills, I am also a team player and I have
           excellent communication and interpersonal skills. I am confident that
           I would be a valuable asset to any team. Furthermore I have the
-          ability to adapt to new environments dcedms and learn new
-          techonologies quickly and I'm determined to see projects from start to
-          finish using each experience as an opportunity to expand my knowledge
-          and skill set.
+          ability to adapt to new environments and learn new technologies
+          quickly and I'm determined to see projects from start to finish using
+          each experience as an opportunity to expand my knowledge and skill
+          set.
         </p>
         <p>
           As of now, I’ve worked on a projects varying from portfolio websites
