@@ -60,6 +60,7 @@ function About() {
           </div>
           <div className="about-layout-card-right">
             <h3 className="text-center">Calcey Technologies</h3>
+            <h4 className="strong text-center sub-heading">Intern</h4>
             <p className="time-duration text-center">Nov 2023 - Feb 2024</p>
             <ul>
               <li>
@@ -85,10 +86,10 @@ function About() {
           </div>
           <div className="about-layout-card-right">
             <h3 className="text-center">Staffordshire University</h3>
+            <h4 className="strong text-center sub-heading">
+              BSc. (Hons.) in Computer Science.
+            </h4>
             <p className="time-duration text-center">March 2023 - Present</p>
-            <ul>
-              <li>BSc. (Hons.) in Computer Science.</li>
-            </ul>
           </div>
         </div>
         <div className="two-card-layout">

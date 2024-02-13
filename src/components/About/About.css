@@ -7,6 +7,10 @@
   font-size: 2.5rem;
 }
 
+.sub-heading {
+  margin: 0.3rem 0 0.5rem;
+}
+
 .about-layout-card-left {
   padding: 0;
   flex: 40%;
@@ -16,7 +20,7 @@
   color: var(--light);
   font-size: 0.75rem;
   font-weight: 400;
-  margin: 0.3rem 0;
+  margin: 0.5rem 0;
 }
 
 .about-layout-card-right {
