@@ -20,6 +20,7 @@ export default async function publishSNS(subject, message) {
     const publishCommand = new PublishCommand(params);
     const data = await snsClient.send(publishCommand);
     console.log(`Message published successfully: ${data.MessageId}`);
+    return 201;
   } catch (error) {
     console.error("Error publishing to SNS:", error);
   }

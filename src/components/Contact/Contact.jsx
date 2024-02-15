@@ -39,7 +39,15 @@ function Contact() {
           initialValues={initialValues}
           onSubmit={async (values) => {
             const body = `Date: ${new Date()} \nName: ${values.name} \nEmail: ${values.email} \nPhone: ${values.phone} \nOrganization: ${values.organization} \nMessage: ${values.message}`;
-            await publishSNS("Porfolio: New form submission.", body);
+            if (
+              (await publishSNS("Porfolio: New form submission.", body)) == 201
+            ) {
+              document.getElementById("submission-status").innerHTML =
+                "Thank you for reaching out!";
+            } else {
+              document.getElementById("submission-status").innerHTML =
+                "Error! Please try again.";
+            }
           }}
           validationSchema={validationSchema}
         >
@@ -83,6 +91,7 @@ function Contact() {
             </Form>
           )}
         </Formik>
+        <p id="submission-status"></p>
       </div>
     </main>
   );

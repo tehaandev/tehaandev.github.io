@@ -13,4 +13,6 @@ ReactDOM.createRoot(document.getElementById("root")).render(
 );
 
 // Prod ONLY
-console.log = function () {};
+// console.log = function () {};
+// console.error = function () {};
+// console.info = function () {};
