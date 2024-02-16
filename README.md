@@ -10,3 +10,5 @@ To showcase my portfolio of front-end projects.
 - Vite
 - Node.js (v20.11.0)
 - NPM (10.0.4)
+- NestJS
+- Axios
