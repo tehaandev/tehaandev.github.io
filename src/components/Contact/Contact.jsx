@@ -1,6 +1,7 @@
 import { Formik, Form, ErrorMessage, Field } from "formik";
 import { useEffect } from "react";
 import * as Yup from "yup";
+import { publishSns } from "../../services/api.service.js";
 import publishSNS from "../../services/aws.service.js";
 import Button from "../Button/Button.jsx";
 import "./Contact.css";
@@ -40,7 +41,7 @@ function Contact() {
           onSubmit={async (values) => {
             const body = `Date: ${new Date()} \nName: ${values.name} \nEmail: ${values.email} \nPhone: ${values.phone} \nOrganization: ${values.organization} \nMessage: ${values.message}`;
             if (
-              (await publishSNS("Porfolio: New form submission.", body)) == 201
+              (await publishSns("Porfolio: New form submission.", body)) == 201
             ) {
               document.getElementById("submission-status").innerHTML =
                 "Thank you for reaching out!";
