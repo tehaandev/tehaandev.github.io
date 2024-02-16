@@ -12,7 +12,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   </React.StrictMode>,
 );
 
-// // Prod ONLY
-// console.log = function () {};
-// console.error = function () {};
-// console.info = function () {};
+// Prod ONLY
+console.log = function () {};
+console.error = function () {};
+console.info = function () {};

@@ -10,6 +10,7 @@ import "./Footer.css";
 
 const YEAR = new Date().getFullYear();
 const COPYRIGHT = `\xA9${YEAR}`;
+const LINKEDIN_URL = "https://www.linkedin.com/in/tehaan-perera/";
 const GITHUB_URL = "https://github.com/tehaandev";
 const STACK_OVERFLOW_URL =
   "https://stackoverflow.com/users/23388746/tehaan-perera";
@@ -49,7 +50,7 @@ function Footer() {
           <div>
             <p>
               {COPYRIGHT}{" "}
-              <Link className="text-tertiary" to={GITHUB_URL}>
+              <Link className="text-tertiary" to={LINKEDIN_URL} target="_blank">
                 Tehaan Perera.
               </Link>
             </p>
