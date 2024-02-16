@@ -35,11 +35,22 @@ header {
   color: var(--light);
 }
 
+.main-nav ul li a::before {
+  content: "•";
+  margin: 0 0.3rem 0 0;
+  opacity: 0;
+  transition: opacity 200ms ease-in-out;
+}
+
 .main-nav ul li a:hover,
 .main-nav ul li a.active {
   color: var(--tertiary);
-  text-shadow: 0px 5px 15px var(--tertiary);
   transition: 200ms ease-in-out;
+}
+
+.main-nav ul li a:hover::before,
+.main-nav ul li a.active::before {
+  opacity: 1;
 }
 
 @media only screen and (max-width: 1200px) {
