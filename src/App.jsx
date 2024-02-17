@@ -1,4 +1,5 @@
 import { lazy, Suspense } from "react";
+import ReactGA from "react-ga";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
 import Footer from "./components/Footer/Footer";
@@ -18,6 +19,10 @@ const ABOUT_ROUTE = "/about";
 const SKILLS_ROUTE = "/skills";
 const PORTFOLIO_ROUTE = "/portfolio";
 const CONTACT_ROUTE = "/contact";
+
+// GA init
+ReactGA.initialize("G-R6L0Q2DYZ7");
+ReactGA.pageview(window.location.pathname + window.location.search);
 
 function App() {
   return (
