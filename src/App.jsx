@@ -28,7 +28,7 @@ function App() {
   return (
     <>
       <Header />
-      <Suspense fallback={<Loading />}>
+      <Suspense fallback={<Loading className="spinner-container" />}>
         <Routes>
           <Route path={HOME_ROUTE} element={<Home />} />
           <Route path={ABOUT_ROUTE} element={<About />} />

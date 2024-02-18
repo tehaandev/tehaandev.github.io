@@ -2,9 +2,9 @@ import { FaSpinner } from "react-icons/fa6";
 import { PiSpinnerLight } from "react-icons/pi";
 import "./Loading.css";
 
-function Loading() {
+function Loading(props) {
   return (
-    <div className="spinner-container">
+    <div className={props.className}>
       <div className="spinner">
         <PiSpinnerLight />
       </div>

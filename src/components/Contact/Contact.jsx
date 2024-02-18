@@ -46,11 +46,11 @@ function Contact() {
             if (response == 201) {
               console.log(response);
               document.getElementById("submission-status").innerHTML =
-                "Thank you for reaching out!";
+                "Submission Successful. Thank you for reaching out!";
             } else {
               console.log(response);
               document.getElementById("submission-status").innerHTML =
-                "Error! Please try again.";
+                `Error ${response}! Please try again.`;
             }
           }}
           validationSchema={validationSchema}

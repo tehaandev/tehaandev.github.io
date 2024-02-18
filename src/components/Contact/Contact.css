@@ -46,6 +46,14 @@ textarea {
   /* color: red; */
 }
 
+.form-status-spinner {
+  display: none;
+}
+
+.form-status-spinner * {
+  font-size: 2rem;
+}
+
 @media only screen and (max-width: 1200px) {
   .contact-form-container .sub-container {
     width: 80%;
