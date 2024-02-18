@@ -1,8 +1,8 @@
-# Portfolio App (v1.3.2)
+# Portfolio App (v1.4.1)
 
-## Purpose
+## Description
 
-To showcase my portfolio of front-end projects.
+The web app was developed with the intention of showcasing my portfolio of projects. Currently, the front-end part of this application is hosted on Azure Static Web Apps.
 
 ## Technologies Used
 
@@ -10,5 +10,5 @@ To showcase my portfolio of front-end projects.
 - Vite
 - Node.js (v20.11.0)
 - NPM (10.0.4)
-- NestJS
 - Axios
+- Azure Static Web Apps
