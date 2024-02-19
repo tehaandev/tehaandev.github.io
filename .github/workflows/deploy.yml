@@ -25,6 +25,6 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: gh-pages # Branch used for deployment
+          branch: cra-migration # Branch used for deployment
           build_dir: build # Directory containing built files
           cache_uploaded: true # Cache uploaded files for faster deployments
