@@ -1,4 +1,4 @@
-# Portfolio App (v2.0)
+# Portfolio App
 
 ## Description
 
