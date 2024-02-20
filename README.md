@@ -10,3 +10,7 @@ The web app was developed with the intention of showcasing my portfolio of proje
 - Node.js (v20.11.0)
 - NPM (10.0.4)
 - Axios
+
+## Change Log
+
+Migrated from Vite to CRA due to a major routing bug.
