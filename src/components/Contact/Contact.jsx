@@ -43,7 +43,7 @@ function Contact() {
               "Porfolio: New form submission.",
               body,
             );
-            if (response == 201) {
+            if (response === 201) {
               console.log(response);
               document.getElementById("submission-status").innerHTML =
                 "Submission Successful. Thank you for reaching out!";

@@ -14,6 +14,27 @@ const RESUME_URL = resume;
 const STACK_OVERFLOW_URL =
   "https://stackoverflow.com/users/23388746/tehaan-perera";
 
+function clickHandler(ref) {
+  let url;
+  switch (ref) {
+    case 'linkedin':
+      url = LINKEDIN_URL;
+      break;
+    case 'github':
+      url = GITHUB_URL;
+      break;
+    case 'stackoverflow':
+      url = STACK_OVERFLOW_URL;
+      break;
+    case 'resume':
+      url = RESUME_URL;
+      break;
+    default:
+      url = "";
+  }
+  window.open(url, "_blank");
+}
+
 function Home() {
   useEffect(() => {
     document.title = HOME_TITLE;
@@ -38,23 +59,23 @@ function Home() {
           <Button
             className="resume-btn"
             text={RESUME_BTN}
-            onClick={resumeDownloader}
+            onClick={()=>clickHandler("resume")}
           />
           <div className="social-media-btns">
             <Button
               className="social-media-btn"
               text={<FaLinkedinIn />}
-              onClick={linkedinBtnClick}
+              onClick={()=>clickHandler("linkedin")}
             />
             <Button
               className="social-media-btn"
               text={<FaGithub />}
-              onClick={githubBtnClick}
+              onClick={()=>clickHandler("github")}
             />
             <Button
               className="social-media-btn"
               text={<FaStackOverflow />}
-              onClick={stackoverflowBtnClick}
+              onClick={()=>clickHandler("stackoverflow")}
             />
           </div>
         </div>
@@ -66,18 +87,5 @@ function Home() {
   );
 }
 
-function resumeDownloader() {
-  window.open(RESUME_URL, "_blank");
-}
 
-function linkedinBtnClick() {
-  window.open(LINKEDIN_URL, "_blank");
-}
-
-function githubBtnClick() {
-  window.open(GITHUB_URL, "_blank");
-}
-function stackoverflowBtnClick() {
-  window.open(STACK_OVERFLOW_URL, "_blank");
-}
 export default Home;

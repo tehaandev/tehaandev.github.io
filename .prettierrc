@@ -6,5 +6,7 @@
   "importOrderGroups": {
     "external": ["react", "react-dom", "lodash"],
     "internal": ["components", "hooks", "utils"]
-  }
+  },
+  "tabWidth": 2,
+  "endOfLine": "crlf"
 }
