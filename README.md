@@ -2,7 +2,7 @@
 
 ## Description
 
-The web app was developed with the intention of showcasing my portfolio of projects. Currently, the front-end part of this application is hosted on Github Pages under <a href="https://tehaan.me" target="_blank">https://tehaan.me</a>
+The web app was developed with the intention of showcasing my portfolio of projects. Currently, the front-end part of this application is hosted on Github Pages under https://tehaan.me.
 
 ## Technologies Used
 
