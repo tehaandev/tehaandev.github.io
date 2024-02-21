@@ -10,8 +10,8 @@ export const PORTFOLIO = {
     name: "Portfolio",
     imgUrl: portfolioImg,
     description: "Personal portfolio website to showcase the work I've done.",
-    technologies: ["Vite", "React.js", "Amazon SNS", "Formik"],
-    url: "https://tehaandev.github.io",
+    technologies: ["React.js", "Axios", "NestJS", "Amazon SNS"],
+    url: "https://tehaan.me",
   },
   mat: {
     id: 3,

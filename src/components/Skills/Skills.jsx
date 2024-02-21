@@ -8,6 +8,7 @@ import {
   SiHtml5,
   SiIonic,
   SiJavascript,
+  SiNestjs,
   SiNodedotjs,
   SiPhp,
   SiReact,
@@ -75,6 +76,10 @@ function Skills() {
           <div className="skill">
             <SiIonic className="skill-logo" id="ionic" />
             <p className="skill-name">Ionic</p>
+          </div>
+          <div className="skill">
+            <SiNestjs className="skill-logo" id="nestjs" />
+            <p className="skill-name">NestJS</p>
           </div>
           <div className="skill">
             <SiNodedotjs className="skill-logo" id="nodejs" />

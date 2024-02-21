@@ -22,28 +22,27 @@ function About() {
           About <span className="text-tertiary">Me.</span>
         </h1>
         <p>
-          I have experience in developing web apps using{" "}
-          <span className="strong">React.js, Vite, Angular, Ionic</span> as well
-          as UI frameworks such as{" "}
-          <span className="strong"> Tailwind CSS.</span> I am also skilled in a
-          variety of other programming languages and technologies, including{" "}
+          I build web apps using{" "}
+          <span className="strong">React.js, Vite, Angular, Ionic</span>{" "}
+          utilizing UI frameworks such as{" "}
+          <span className="strong"> Tailwind CSS.</span> My repertoire extends
+          beyond the typical frameworks as I am also fluent in programming
+          languages and technologies, such as{" "}
           <span className="strong">
             C#, Java, Node.js, PHP, Python, and SQL.
           </span>{" "}
-          I am a quick learner and I am always eager to take on new challenges.
+          I am a quick learner and I thrive in taking on new challenges.
         </p>
         <p>
-          In addition to my technical skills, I am also a team player and I have
-          excellent communication and interpersonal skills. I am confident that
-          I would be a valuable asset to any team. Furthermore I have the
-          ability to adapt to new environments and learn new technologies
-          quickly and I'm determined to see projects from start to finish using
-          each experience as an opportunity to expand my knowledge and skill
-          set.
+          Beyond my technical prowess, what sets me apart from most developers
+          is the fact that I have the ability to adapt to new technologies
+          quickly as well as my ability to work as a team and individually
+          depending on what the project needs.
         </p>
         <p>
           As of now, I’ve worked on a projects varying from portfolio websites
-          to business websites.
+          to business websites but I'm constantly seeking new challenges and
+          opportunities to push my boundaries and refine my craft.
         </p>
       </div>
       <div className="sub-container">
@@ -89,7 +88,7 @@ function About() {
             <h4 className="strong text-center sub-heading">
               BSc. (Hons.) in Computer Science.
             </h4>
-            <p className="time-duration text-center">March 2023 - Present</p>
+            <p className="time-duration text-center">Mar 2023 - Present</p>
           </div>
         </div>
         <div className="two-card-layout">

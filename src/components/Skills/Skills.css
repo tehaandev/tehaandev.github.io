@@ -79,6 +79,11 @@
   color: #f7df1e;
 }
 
+#nestjs + p,
+#nestjs {
+  color: #e0234e;
+}
+
 #nodejs + p,
 #nodejs {
   color: #339933;
