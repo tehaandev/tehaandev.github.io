@@ -45,7 +45,7 @@ function Home() {
         <h4 className="intro-txt greet-msg-txt">Hello, My name is</h4>
         <h1 className="intro-txt">Tehaan Perera</h1>
         <h3 className="intro-txt">
-          And I'm a <span className="text-tertiary">Full-stack Developer.</span>
+          And I'm a <span className="text-tertiary">full-stack developer.</span>
         </h3>
         <p>
           I’m a full-stack developer based in Sri Lanka. Currently I’m a
