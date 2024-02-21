@@ -5,7 +5,7 @@ import img from "../../assets/homepage-picture.png";
 import Button from "../Button/Button";
 import "./Home.css";
 
-const HOME_TITLE = "TP | Home";
+const HOME_TITLE = "TP | Portfolio";
 const RESUME_BTN = `Download CV`;
 
 const LINKEDIN_URL = "https://www.linkedin.com/in/tehaan-perera/";
@@ -17,16 +17,16 @@ const STACK_OVERFLOW_URL =
 function clickHandler(ref) {
   let url;
   switch (ref) {
-    case 'linkedin':
+    case "linkedin":
       url = LINKEDIN_URL;
       break;
-    case 'github':
+    case "github":
       url = GITHUB_URL;
       break;
-    case 'stackoverflow':
+    case "stackoverflow":
       url = STACK_OVERFLOW_URL;
       break;
-    case 'resume':
+    case "resume":
       url = RESUME_URL;
       break;
     default:
@@ -48,8 +48,8 @@ function Home() {
           And I'm a <span className="text-tertiary">Full-stack Developer.</span>
         </h3>
         <p>
-          I’m a full-stack developer based in Sri Lanka. Currently I’m
-          a second-year undergraduate majoring in Computer Science.
+          I’m a full-stack developer based in Sri Lanka. Currently I’m a
+          second-year undergraduate majoring in Computer Science.
         </p>
         <p>
           I’m passionate about developing lightweight, superfast web apps with a
@@ -59,23 +59,23 @@ function Home() {
           <Button
             className="resume-btn"
             text={RESUME_BTN}
-            onClick={()=>clickHandler("resume")}
+            onClick={() => clickHandler("resume")}
           />
           <div className="social-media-btns">
             <Button
               className="social-media-btn"
               text={<FaLinkedinIn />}
-              onClick={()=>clickHandler("linkedin")}
+              onClick={() => clickHandler("linkedin")}
             />
             <Button
               className="social-media-btn"
               text={<FaGithub />}
-              onClick={()=>clickHandler("github")}
+              onClick={() => clickHandler("github")}
             />
             <Button
               className="social-media-btn"
               text={<FaStackOverflow />}
-              onClick={()=>clickHandler("stackoverflow")}
+              onClick={() => clickHandler("stackoverflow")}
             />
           </div>
         </div>
@@ -86,6 +86,5 @@ function Home() {
     </main>
   );
 }
-
 
 export default Home;
