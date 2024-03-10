@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import Amplify from "../../assets/amplify.png";
 import Uni from "../../assets/apiit.png";
 import Calcey from "../../assets/calcey.svg";
 import AWS from "../../assets/certs/coursera_aws.jpeg";
@@ -49,6 +50,18 @@ function About() {
         <h2>
           Work Experience<span className="text-tertiary">.</span>
         </h2>
+        <div className="two-card-layout">
+          <div className="about-layout-card-left">
+            <img className="place-img" src={Amplify} alt="Amplify Solutions" />
+          </div>
+          <div className="about-layout-card-right">
+            <h3 className="text-center">Amplify Solutions</h3>
+            <h4 className="strong text-center sub-heading">
+              Software Engineer (React / Next.js)
+            </h4>
+            <p className="time-duration text-center">March 2024 - Present</p>
+          </div>
+        </div>
         <div className="two-card-layout">
           <div className="about-layout-card-left">
             <img

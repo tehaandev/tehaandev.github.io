@@ -13,7 +13,7 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  width: 70%;
+  width: 100%;
   margin: auto;
 }
 
@@ -82,6 +82,11 @@
 #nestjs + p,
 #nestjs {
   color: #e0234e;
+}
+
+#nextjs + p,
+#nextjs {
+  color: var(--light);
 }
 
 #nodejs + p,
