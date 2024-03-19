@@ -2,10 +2,7 @@ import { lazy, Suspense } from "react";
 import ReactGA from "react-ga";
 import { Routes, Route } from "react-router-dom";
 import "./App.css";
-import Footer from "./components/Footer/Footer";
-import Header from "./components/Header/Header";
 import Loading from "./components/Loading/Loading";
-import Tabs from "./components/Tabs/Tabs";
 
 // Lazy Components
 const Home = lazy(() => import("./components/Home/Home.jsx"));
@@ -27,7 +24,6 @@ ReactGA.pageview(window.location.pathname + window.location.search);
 function App() {
   return (
     <>
-      <Header />
       <Suspense fallback={<Loading className="spinner-container" />}>
         <Routes>
           <Route path={HOME_ROUTE} element={<Home />} />
@@ -37,8 +33,6 @@ function App() {
           <Route path={CONTACT_ROUTE} element={<Contact />} />
         </Routes>
       </Suspense>
-      <Footer />
-      <Tabs />
     </>
   );
 }
