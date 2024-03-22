@@ -1,5 +1,6 @@
 import { Formik, Form, ErrorMessage, Field } from "formik";
 import { useEffect } from "react";
+import toast, { Toaster } from "react-hot-toast";
 import * as Yup from "yup";
 import { publishSns } from "../../services/api.service.js";
 import Button from "../Button/Button.jsx";
@@ -36,6 +37,7 @@ function Contact() {
     <>
       <Header />
       <main className="container contact-form-container">
+        <Toaster position="top-center" reverseOrder={false} />
         <div className="sub-container">
           <h1>
             Let's <span className="text-tertiary">talk!</span>
@@ -44,19 +46,25 @@ function Contact() {
             initialValues={initialValues}
             onSubmit={async (values) => {
               const body = `Date: ${new Date()} \nName: ${values.name} \nEmail: ${values.email} \nPhone: ${values.phone} \nOrganization: ${values.organization} \nMessage: ${values.message}`;
-              const response = await publishSns(
-                "Porfolio: New form submission.",
-                body,
+              // const response = await publishSns(
+              //   "Porfolio: New form submission.",
+              //   body,
+              // );
+              // if (response === 201) {
+              //   console.log(response);
+              //   toast.success("Form submitted successfully!");
+              // } else {
+              //   console.log(response);
+              //   toast.error("Form submission failed. Please try again later.");
+              // }
+              toast.promise(
+                publishSns("Porfolio: New form submission.", body),
+                {
+                  loading: "Submitting...",
+                  success: "Form submitted successfully!",
+                  error: "Form submission failed. Please try again later.",
+                },
               );
-              if (response === 201) {
-                console.log(response);
-                document.getElementById("submission-status").innerHTML =
-                  "Submission Successful. Thank you for reaching out!";
-              } else {
-                console.log(response);
-                document.getElementById("submission-status").innerHTML =
-                  `Error ${response}! Please try again.`;
-              }
             }}
             validationSchema={validationSchema}
           >
