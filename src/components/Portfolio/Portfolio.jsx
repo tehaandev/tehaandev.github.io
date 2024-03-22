@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Tabs from "../Tabs/Tabs";
@@ -8,11 +8,11 @@ import { PORTFOLIO } from "./portfolio-items";
 const TITLE = "TP | Work I've done";
 
 function Portfolio() {
-  useEffect(() => {
-    document.title = TITLE;
-  });
   return (
     <>
+      <Helmet>
+        <title>{TITLE}</title>
+      </Helmet>
       <Header />
       <main className="container ">
         <div className="sub-container">

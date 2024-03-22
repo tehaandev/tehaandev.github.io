@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Amplify from "../../assets/amplify.png";
@@ -16,11 +16,11 @@ const AWS_CERT_URL =
   "https://coursera.org/share/d24aaeeb96ff6b0ad41512491418de61";
 
 function About() {
-  useEffect(() => {
-    document.title = ABOUT_TITLE;
-  });
   return (
     <>
+      <Helmet>
+        <title>{ABOUT_TITLE}</title>
+      </Helmet>
       <Header />
       <main className="container about-content">
         <div className="sub-container intro-container">

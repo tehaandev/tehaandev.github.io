@@ -1,5 +1,5 @@
 import { Formik, Form, ErrorMessage, Field } from "formik";
-import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import toast, { Toaster } from "react-hot-toast";
 import * as Yup from "yup";
 import { publishSns } from "../../services/api.service.js";
@@ -12,10 +12,6 @@ import "./Contact.css";
 const TITLE = "TP | Let's get in touch";
 
 function Contact() {
-  useEffect(() => {
-    document.title = TITLE;
-  });
-
   const initialValues = {
     name: "",
     email: "",
@@ -35,6 +31,9 @@ function Contact() {
 
   return (
     <>
+      <Helmet>
+        <title>{TITLE}</title>
+      </Helmet>
       <Header />
       <main className="container contact-form-container">
         <Toaster position="top-center" reverseOrder={false} />

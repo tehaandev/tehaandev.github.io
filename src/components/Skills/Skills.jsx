@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import {
   SiAlpinedotjs,
   SiAngular,
@@ -26,11 +26,11 @@ import "./Skills.css";
 const SKILLS_TITLE = "TP | What can I do?";
 
 function Skills() {
-  useEffect(() => {
-    document.title = SKILLS_TITLE;
-  });
   return (
     <>
+      <Helmet>
+        <title>{SKILLS_TITLE}</title>
+      </Helmet>
       <Header />
       <main className="container skills-content">
         <div className="sub-container">

@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { Helmet } from "react-helmet";
 import { FaGithub, FaLinkedinIn, FaStackOverflow } from "react-icons/fa6";
 import resume from "../../assets/docs/resume-tehaan-perera.pdf";
 import img from "../../assets/homepage-picture.png";
@@ -39,11 +39,22 @@ function clickHandler(ref) {
 }
 
 function Home() {
-  useEffect(() => {
-    document.title = HOME_TITLE;
-  });
   return (
     <>
+      <Helmet>
+        <title>{HOME_TITLE}</title>
+        <meta charset="utf-8" />
+        <meta
+          name="description"
+          content="Website developed to showcase the developer portfolio of Tehaan Perera."
+        />
+        <meta property="og:title" content="Portfolio | Tehaan Perera" />
+        <meta property="og:url" content="https://tehaan.me" />
+        <meta property="og:image" content="%PUBLIC_URL%/logo512.png" />
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+      </Helmet>
+
       <Header />
       <main className="container home-layout two-card-layout">
         <div className="home-layout-card-left">
