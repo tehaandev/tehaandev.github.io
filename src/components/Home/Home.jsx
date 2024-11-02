@@ -1,6 +1,6 @@
 import { Helmet } from "react-helmet";
 import { FaGithub, FaLinkedinIn, FaStackOverflow } from "react-icons/fa6";
-import resume from "../../assets/docs/resume-tehaan-perera.pdf";
+import resume from "../../assets/docs/Resume-Tehaan_Perera.pdf";
 import img from "../../assets/homepage-picture.png";
 import Button from "../Button/Button";
 import Footer from "../Footer/Footer";
