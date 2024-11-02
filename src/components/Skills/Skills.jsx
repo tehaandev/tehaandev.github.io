@@ -19,12 +19,26 @@ import Tabs from "../Tabs/Tabs";
 import "./Skills.css";
 
 const SKILLS_TITLE = "TP | What can I do?";
+const SKILLS_DESCRIPTION =
+  'Discover the technologies and tools I am proficient in.';
 
 function Skills() {
   return (
     <>
       <Helmet>
         <title>{SKILLS_TITLE}</title>
+        <meta name="description" content={SKILLS_DESCRIPTION} />
+        <meta name="author" content="Tehaan Perera" />
+        <meta name="og:title" property="og:title" content={SKILLS_TITLE} />
+        <meta
+          name="og:description"
+          property="og:description"
+          content={SKILLS_DESCRIPTION}
+        />
+        <meta property="og:url" content="https://tehaan.me/skills" />
+        <meta property="og:image" content="%PUBLIC_URL%/logo512.png" />
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
       </Helmet>
       <Header />
       <main className="container skills-content">

@@ -12,6 +12,18 @@ function Portfolio() {
     <>
       <Helmet>
         <title>{TITLE}</title>
+        <meta name="description" content="Portfolio page of Tehaan Perera" />
+        <meta name="author" content="Tehaan Perera" />
+        <meta name="og:title" property="og:title" content={TITLE} />
+        <meta
+          name="og:description"
+          property="og:description"
+          content="Portfolio page of Tehaan Perera"
+        />
+        <meta property="og:url" content="https://tehaan.me/portfolio" />
+        <meta property="og:image" content="%PUBLIC_URL%/logo512.png" />
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
       </Helmet>
       <Header />
       <main className="container ">

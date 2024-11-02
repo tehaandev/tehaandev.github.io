@@ -13,6 +13,7 @@ import Tabs from "../Tabs/Tabs";
 import "./About.css";
 
 const ABOUT_TITLE = "TP | Who am I?";
+const ABOUT_DESCRIPTION = "Get to know me better.";
 const AWS_CERT_URL =
   "https://coursera.org/share/d24aaeeb96ff6b0ad41512491418de61";
 const Meta_CERT_URL = 'https://coursera.org/share/ea9ccc508080ee928026a95723f82224'
@@ -22,6 +23,10 @@ function About() {
     <>
       <Helmet>
         <title>{ABOUT_TITLE}</title>
+        <meta name="description" content={ABOUT_DESCRIPTION} />
+        <meta name="author" content="Your Name" />
+        <meta name="og:title" property="og:title" content={ABOUT_TITLE} />
+        <meta name="og:description" property="og:description" content={ABOUT_DESCRIPTION} />
       </Helmet>
       <Header />
       <main className="container about-content">
