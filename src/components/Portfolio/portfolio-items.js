@@ -3,8 +3,26 @@ import matImg from "../../assets/portfolio/mat.png";
 import papermunchImg from "../../assets/portfolio/papermunch.png";
 import portfolioImg from "../../assets/portfolio/portfolio.png";
 import turtlesOfLk from "../../assets/portfolio/turtlesOfLk.png";
+import artistryImg from "../../assets/portfolio/artistry.png";
+import ohmyf1Img from "../../assets/portfolio/ohmyf1.png";
 
 export const PORTFOLIO = {
+  ohmyf1:{
+    id: 6,
+    name: "ohmyF1.com (Coming Soon)",
+    imgUrl: ohmyf1Img,
+    description: "A platform for Formula 1 fans to get real-time stats and updates.",
+    technologies: ["Next.js", "Mongo DB", "Shadcn", "Ant Design", "Tailwind CSS"],
+    url: "https://ohmyf1.com/",
+  },
+  artistry:{
+    id: 5,
+    name: "Artistry",
+    imgUrl: artistryImg,
+    description: "A platform for artists to showcase their work and connect with other artists.",
+    technologies: ["Next.js", "PostgreSQL (Supabase)", "Amazon S3", "Ant Design"],
+    url: "https://artistry-liard.vercel.app/",
+  },
   portfolio: {
     id: 4,
     name: "Portfolio",

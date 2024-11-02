@@ -1,22 +1,17 @@
 import { Helmet } from "react-helmet";
 import {
-  SiAlpinedotjs,
-  SiAngular,
   SiAmazonaws,
-  SiCsharp,
-  SiCss3,
-  SiHtml5,
+  SiDocker,
+  SiExpo,
   SiIonic,
-  SiJavascript,
+  SiMongodb,
   SiNestjs,
   SiNextdotjs,
   SiNodedotjs,
-  SiPhp,
   SiReact,
   SiSqlite,
   SiTailwindcss,
-  SiTypescript,
-  SiVite,
+  SiVite
 } from "react-icons/si";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
@@ -34,54 +29,29 @@ function Skills() {
       <Header />
       <main className="container skills-content">
         <div className="sub-container">
-          <h2 className="skills-header">Languages.</h2>
-          <div className="skill-icon-container">
-            <div className="skill">
-              <SiCsharp className="skill-logo" id="csharp" />
-              <p className="skill-name">C#</p>
-            </div>
-            <div className="skill">
-              <SiCss3 className="skill-logo" id="css3" />
-              <p className="skill-name">CSS3</p>
-            </div>
-            <div className="skill">
-              <SiHtml5 className="skill-logo" id="html5" />
-              <p className="skill-name">HTML5</p>
-            </div>
-            <div className="skill">
-              <SiJavascript className="skill-logo" id="javascript" />
-              <p className="skill-name">JavaScript</p>
-            </div>
-            <div className="skill">
-              <SiPhp className="skill-logo" id="php" />
-              <p className="skill-name">PHP</p>
-            </div>
-            <div className="skill">
-              <SiTypescript className="skill-logo" id="typescript" />
-              <p className="skill-name">TypeScript</p>
-            </div>
-          </div>
-        </div>
-        <div className="sub-container">
           <h2 className="skills-header">
-            Frameworks and <span className="text-tertiary">Tools.</span>
+            {`Frontend & Backend Development`}<span className="text-tertiary">.</span>
           </h2>
           <div className="skill-icon-container">
-            <div className="skill">
-              <SiAlpinedotjs className="skill-logo" id="alpine" />
-              <p className="skill-name">Alpine.js</p>
-            </div>
-            <div className="skill">
-              <SiAngular className="skill-logo" id="angular" />
-              <p className="skill-name">Angular</p>
-            </div>
             <div className="skill">
               <SiAmazonaws className="skill-logo" id="aws" />
               <p className="skill-name">AWS</p>
             </div>
             <div className="skill">
+              <SiDocker className="skill-logo" id="docker" />
+              <p className="skill-name">Docker</p>
+            </div>
+            <div className="skill">
+              <SiExpo className="skill-logo" id="expo" />
+              <p className="skill-name">Expo</p>
+            </div>
+            <div className="skill">
               <SiIonic className="skill-logo" id="ionic" />
               <p className="skill-name">Ionic</p>
+            </div>
+            <div className="skill">
+              <SiMongodb className="skill-logo" id="mongodb" />
+              <p className="skill-name">MongoDB</p>
             </div>
             <div className="skill">
               <SiNestjs className="skill-logo" id="nestjs" />
@@ -113,7 +83,7 @@ function Skills() {
             </div>
           </div>
         </div>
-      </main>
+              </main>
       <Footer />
       <Tabs />
     </>

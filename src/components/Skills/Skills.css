@@ -124,6 +124,21 @@
   color: #646cff;
 }
 
+#docker + p,
+#docker {
+  color: #0db7ed;
+}
+
+#mongodb + p,
+#mongodb {
+  color: #13aa52;
+}
+
+#expo + p,
+#expo {
+  color: var(--light);
+}
+
 @media only screen and (max-width: 1200px) {
   .skills-content {
     width: 100%;

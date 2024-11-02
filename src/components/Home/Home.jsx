@@ -65,12 +65,8 @@ function Home() {
             <span className="text-tertiary">full-stack developer.</span>
           </h3>
           <p>
-            I’m a full-stack developer based in Sri Lanka. Currently I’m a
-            second-year undergraduate majoring in Computer Science.
-          </p>
-          <p>
-            I’m passionate about developing lightweight, superfast web apps with
-            a pixel-perfect UI and an intuitive UX.
+            {`
+I'm a full-stack developer based in Sri Lanka and a second-year Computer Science undergraduate. I'm passionate about building lightweight, fast web apps with pixel-perfect UI and intuitive UX.`}
           </p>
           <div className="home-page-btns">
             <Button
